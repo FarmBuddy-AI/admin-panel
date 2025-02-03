@@ -1,101 +1,63 @@
+"use client";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <section className="h-[100vh] bg-gradient-to-b from-white to-[#E6F8FC] py-16 md:py-24 text-gray-800 flex justify-end items-center">
+      <div className="container mx-auto px-4 text-center flex justify-end items-center flex-col">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold my-6 text-gray-800 leading-tight">
+          YAWA ENTERPRISE SOLUTION (YES)
+        </h2>
+        <p className="text-xl md:text-2xl font-semibold mb-8 text-gray-700">
+          For National Emergency Response, Situational Awareness, and Citizen-Driven Reporting in Nigeria
+        </p>
+        <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-xl p-8 mb-12">
+          <ul className="text-left text-lg mb-8 space-y-4">
+            <li className="flex items-center">
+              <svg className="w-6 h-6 mr-2 text-[#03BDE9]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Rapid Emergency Response Coordination
+            </li>
+            <li className="flex items-center">
+              <svg className="w-6 h-6 mr-2 text-[#03BDE9]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Real-time Situational Awareness
+            </li>
+            <li className="flex items-center">
+              <svg className="w-6 h-6 mr-2 text-[#03BDE9]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Citizen-Driven Incident Reporting
+            </li>
+            <li className="flex items-center">
+              <svg className="w-6 h-6 mr-2 text-[#03BDE9]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Integrated Data Analytics for Informed Decision-Making
+            </li>
+          </ul>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <Button 
+            onClick={() => router.push('/auth/login')}
+            className="bg-[#03BDE9] hover:bg-[#029BC1] text-white font-bold py-3 px-6 rounded-none text-lg transition-colors duration-300"
+          >
+            Login
+          </Button>
+          <Button 
+            variant="outline"
+            onClick={() => router.push('/auth/verify')}
+            className="border-[#03BDE9] text-[#03BDE9] hover:bg-[#03BDE9] hover:text-white font-bold py-3 px-6 rounded-none text-lg transition-colors duration-300"
+          >
+            Verify Your Account
+          </Button>
+        </div>
+      </div>
+    </section>
   );
 }
