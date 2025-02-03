@@ -1,3 +1,4 @@
+import { OrderPlacedChart } from '@/components/buyers-analytics/order-placed-chart'
 import { PaymentMethodChart } from '@/components/buyers-analytics/payment-method-chart'
 import { SubsChart } from '@/components/buyers-analytics/subs-chart'
 import { CategoriesChart } from '@/components/categories-chart'
@@ -36,6 +37,7 @@ function Page() {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full'>
             <PaymentMethodChart />
             <SubsChart />
+            <OrderPlacedChart />
         </div>
         </>
     </div>

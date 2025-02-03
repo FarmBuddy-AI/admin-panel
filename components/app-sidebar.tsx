@@ -25,7 +25,7 @@ import {
 // Menu items.
 const items = [
   {
-    title: "Home",
+    title: "Overview",
     url: "#",
     icon: Home,
   },
@@ -55,7 +55,7 @@ export function AppSidebar() {
   return (
     <Sidebar>
         <SidebarHeader>
-            <h3 className="font-semibold text-2xl text-green-600">FarmBuddy</h3>
+            <h3 className="font-semibold text-2xl text-green-600 my-4">FarmBuddy</h3>
         </SidebarHeader>
 
         <SidebarContent>
@@ -64,13 +64,13 @@ export function AppSidebar() {
             <SidebarGroupContent>
                 <SidebarMenu>
                 {items.map((item) => (
-                    <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild>
-                        <a href={item.url}>
-                        <item.icon />
-                        <span>{item.title}</span>
-                        </a>
-                    </SidebarMenuButton>
+                    <SidebarMenuItem key={item.title} className="font-bold">
+                        <SidebarMenuButton asChild>
+                            <a href={item.url}>
+                            <item.icon />
+                            <span>{item.title}</span>
+                            </a>
+                        </SidebarMenuButton>
                     </SidebarMenuItem>
                 ))}
                 </SidebarMenu>
